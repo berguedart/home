@@ -20,28 +20,11 @@ $(function () {
         contacto = $('#contacte').offset().top;
     });
 
-    $('#enlace-inicio').on('click', function(e){
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        },600);
-    });
-
     $('#enlace-equipo').on('click', function(e){
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: equipo -100
-        },600);
+        location.href = "membres.html";
     });
 
     $('#enlace-servicio').on('click', function(e){
-            location.href = "serveis.html";
-    });
-
-    $('#enlace-contacto').on('click', function(e){
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: contacto -100
-        },600);
+            location.href = "obres.html";
     });
 });

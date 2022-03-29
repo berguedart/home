@@ -146,6 +146,8 @@ nav .enlaces a:hover{
 
 .logo, .logo img{ height:80px;}
 
+.logo_portada img{ width:100%;}
+
 .icono{
   display:none;
   font-size: 24px;
