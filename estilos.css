@@ -146,7 +146,14 @@ nav .enlaces a:hover{
 
 .logo, .logo img{ height:80px;}
 
-.logo_portada img{ width:100%;}
+.logo_portada img{ 
+  display: flex;
+  margin: auto;
+  width: 100%;
+  max-width:1000px;
+  height:inherit;
+  overflow: hidden;
+}
 
 .icono{
   display:none;
