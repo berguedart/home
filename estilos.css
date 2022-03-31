@@ -7,6 +7,7 @@
   --margenes: 60px;
   --espacios: 10px;
   --espacios-contenido:45px;
+  --cool-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
@@ -90,31 +91,18 @@ header{
   width: 100%;
   height:80px;
   background: linear-gradient(to bottom,
-  rgba(151, 62, 11, 0.6),
+  rgba(196, 88, 26, 0.76),
   rgba(235, 212, 7, 0.801),
-  rgba(233, 126, 3, 0.45)
+  rgba(131, 74, 10, 0.45)
   );
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-nav{
-  width: 100%;
-  position: fixed;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
-}
-
 .nav1{
-  background: transparent;
   height: 80px;
   color:#fff;
-}
-
-.nav2{
-  background: var(--fondo);
-  height:100px;
-  color:#000;
 }
 
 .contenedor-nav{
@@ -132,7 +120,8 @@ nav .enlaces a{
   display: inline-block;
   padding: 5px 0;
   margin-right: 17px;
-  font-size: 19px;
+  font-size: 23px;
+  font-family: var(--cool-font);
   font-weight: 300;
   text-decoration: none;
   border-bottom: 3px solid transparent;
@@ -144,7 +133,7 @@ nav .enlaces a:hover{
   transition: 0.6s;
 }
 
-.logo, .logo img{ height:80px;}
+.logo, .logo img{ height:70px;}
 
 .logo_portada img{ 
   display: flex;
@@ -167,6 +156,7 @@ nav .enlaces a:hover{
 
 .link{
   color: white;
+  margin: 2%;
 }
 
 .textos{
@@ -206,6 +196,10 @@ nav .enlaces a:hover{
   font-size: var(--subtitulos);
   font-weight: 300;
   color: var(--color1);
+}
+
+.icones img {
+  width: 70px;
 }
 
 .after::after{
@@ -250,6 +244,7 @@ nav .enlaces a:hover{
 
 .about{
   background: url(img/teclado.jpg);
+  font-family: var(--cool-font);
   height: auto;
   opacity:0.9;
 }
@@ -270,12 +265,18 @@ nav .enlaces a:hover{
   margin-bottom: var(--espacios);
 }
 
+.caja-servicios img {
+  width: 90px;
+  margin: 2%;
+}
+
 .caja-servicios>p{
   text-align: center;
 }
 
 .botones-work{
   overflow: hidden;
+  font-family: var(--cool-font);
 }
 
 .botones-work li{
@@ -297,6 +298,7 @@ nav .enlaces a:hover{
 
 .botones-work .active{
   background: var(--color1);
+  font-family: var(--cool-font);
   color:#fff;
 }
 
@@ -331,8 +333,22 @@ nav .enlaces a:hover{
 
 .textos-work h4{
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: var(--cool-font);
 }
+
+.work h3{
+  line-height: 30px;
+  font-weight: 450;
+  font-family: var(--cool-font);
+}
+
+.work p{
+  line-height: 30px;
+  font-weight: 400;
+  font-family: var(--cool-font);
+}
+
 /*Gallery Display*/
 
 * {box-sizing:border-box}
@@ -341,13 +357,43 @@ nav .enlaces a:hover{
 .slideshow-container {
   max-width: 800px;
   position: relative;
+  align-items: center;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.slideshow-container p{
+  font-size:x-large;
+  padding: 2%;
+}
+
+.slideshow-container div{
+  
+  text-align: center;
+  font-style: oblique;
+  margin-bottom: 20px;
+}
+
+.images_galery img {
+  max-height:400px;
+  align-items: center;
+  margin: auto;
+}
+
+.section2 {
+  background: #9ec2c5;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /* Next & previous buttons */
@@ -403,7 +449,7 @@ nav .enlaces a:hover{
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgb(99, 94, 94);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -456,8 +502,10 @@ footer{
   display: inline-block;
 }
 
-footer p{
+.contacto p{
   margin-top:var(--espacios);
+  color: white;
+  font-family: var(--cool-font);
 }
 
 @media screen and (max-width: 700px){
